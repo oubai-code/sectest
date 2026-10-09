@@ -6,7 +6,7 @@ const dogsData = [
     gender: "male",
     status: "available",
     desc: "Playful, people-oriented, and loves outdoor walks.",
-    image: "images/1.jpg" 
+    image: "images/1.JPG" 
  },
    {
     id: "ice",
@@ -14,7 +14,7 @@ const dogsData = [
     gender: "male",
     status: "available",
     desc: "Playful, people-oriented, and loves outdoor walks.",
-    image: "images/4.jpg" 
+    image: "images/4.JPG" 
  },
    {
     id: "ice",
@@ -22,7 +22,7 @@ const dogsData = [
     gender: "male",
     status: "available",
     desc: "Playful, people-oriented, and loves outdoor walks.",
-    image: "images/5.jpg" 
+    image: "images/5.JPG" 
  },
    {
     id: "ice",
@@ -30,7 +30,7 @@ const dogsData = [
     gender: "male",
     status: "available",
     desc: "Playful, people-oriented, and loves outdoor walks.",
-    image: "images/6.jpg" 
+    image: "images/6.JPG" 
  },
   {
     id: "emma",
@@ -38,7 +38,7 @@ const dogsData = [
     gender: "female",
     status: "available",
     desc: "Gentle and affectionate young cat looking for a cozy home.",
-    image: "images/2.jpg" 
+    image: "images/2.JPG" 
   },
   {
     id: "hank",
@@ -46,7 +46,7 @@ const dogsData = [
     gender: "male",
     status: "available",
     desc: "A sweet tripod pup who is full of energy and cuddles.",
-    image: "images/3.jpg" 
+    image: "images/3.JPG" 
   },
     {
     id: "ice",
@@ -54,7 +54,7 @@ const dogsData = [
     gender: "male",
     status: "available",
     desc: "Playful, people-oriented, and loves outdoor walks.",
-    image: "images/7.jpg" 
+    image: "images/7.JPG" 
  },
    {
     id: "ice",
@@ -62,7 +62,7 @@ const dogsData = [
     gender: "male",
     status: "available",
     desc: "Playful, people-oriented, and loves outdoor walks.",
-    image: "images/8.jpg" 
+    image: "images/8.JPG" 
  },
 ];
 
@@ -108,7 +108,7 @@ function renderAnimals(animals) {
     const card = document.createElement("div");
     card.className = "dog-card";
     card.innerHTML = `
-      <img src="/sectest/${animal.image}" alt="${animal.name}" class="dog-thumb">
+      <img src="${animal.image}" alt="${animal.name}" class="dog-thumb">
       <div class="dog-name">${animal.name}</div>
       <p class="dog-desc">${animal.desc}</p>
     `;
