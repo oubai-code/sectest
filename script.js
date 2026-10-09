@@ -108,7 +108,7 @@ function renderAnimals(animals) {
     const card = document.createElement("div");
     card.className = "dog-card";
     card.innerHTML = `
-      <img src="${animal.image}" alt="${animal.name}" class="dog-thumb">
+      <img src="/sectest/${animal.image}" alt="${animal.name}" class="dog-thumb">
       <div class="dog-name">${animal.name}</div>
       <p class="dog-desc">${animal.desc}</p>
     `;
