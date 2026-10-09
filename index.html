@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto TNR CDMX</title>
+  <meta name="description" content="Proyecto TNR CDMX — animal adoption, rescue, sterilization and support for cats and dogs.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- =========================
+       FIXED TOP HEADER WITH SOCIAL ICONS
+       ========================= -->
+  <header class="top-header">
+    <div class="header-content">
+      <div class="logo-brand">
+        <svg viewBox="0 0 100 100" class="logo-svg" aria-hidden="true">
+          <circle cx="50" cy="50" r="43" fill="#7B33BA"/>
+          <path d="M50 77 C43 71 25 59 25 45 C25 32 41 28 50 42 C59 28 75 32 75 45 C75 59 57 71 50 77Z" fill="#FFD8EC"/>
+          <circle cx="35" cy="30" r="6" fill="#FFFFFF"/>
+          <circle cx="65" cy="30" r="6" fill="#FFFFFF"/>
+          <circle cx="24" cy="43" r="5" fill="#FFFFFF"/>
+          <circle cx="76" cy="43" r="5" fill="#FFFFFF"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">PILY</span>
+          <span class="brand-sub">Proyecto TNR CDMX</span>
+        </div>
+      </div>
+
+      <!-- MAIN NAVIGATION LINKS -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#adoptions">Adoptions</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- SOCIAL MEDIA SVG ICONS AT TOP RIGHT -->
+      <div class="header-socials">
+        <!-- Facebook Icon -->
+        <a href="https://www.facebook.com/share/1JzN4z2Yqo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-icon fb" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.65 13.7 5.65c1.06 0 2.17.19 2.17.19v2.38h-1.22c-1.23 0-1.62.77-1.62 1.56V12h2.69l-.43 3h-2.26v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+        </a>
+        <!-- Instagram Icon -->
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon ig" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <!-- WhatsApp Icon -->
+        <a href="https://wa.me/525648982770" target="_blank" rel="noopener noreferrer" class="social-icon wa" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================
+       MAIN CONTENT
+       ========================= -->
+  <main class="content-container">
+
+    <!-- FIRST SCREEN HERO (100vh - 2 LIVE SHOWCASE PICS) -->
+    <section id="home" class="hero-screen">
+      <div class="slogan-badge">
+        <span>✨ Atrapar / Esterilizar / Liberar ✨</span>
+      </div>
+
+      <div class="hero-split-showcase">
+        <!-- Live Pic 1: Adoptions -->
+        <a href="#adoptions" class="showcase-card showcase-adoptions">
+          <div class="showcase-overlay"></div>
+          <img src="images/1.jpg" alt="Adopt Animals" class="showcase-img">
+          <div class="showcase-content">
+            <span class="badge pink-badge">Live Adoption 🐾</span>
+            <h3>Meet Animals Looking for Homes 🐶🐱</h3>
+          </div>
+        </a>
+
+        <!-- Live Pic 2: Pet Shop -->
+        <a href="#shop" class="showcase-card showcase-shop">
+          <div class="showcase-overlay"></div>
+          <img src="images/11.jpeg"  alt="Pet Shop Supplies" class="showcase-img">
+          <div class="showcase-content">
+            <span class="badge blue-badge">Online Store 🎀</span>
+            <h3>Explore Toys, Chains & Pet Supplies 🦴</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll down</span>
+        <div class="arrow">&#8595;</div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="scroll-section full-page-section">
+      <div class="section-card-wrapper">
+        <span class="section-tag">Who We Are</span>
+        <h2>About Proyecto TNR CDMX 🌸</h2>
+        <div class="about-content">
+          <p class="lead-text">
+            Proyecto TNR CDMX is dedicated to animal welfare in Mexico City through Trap-Neuter-Return (TNR) initiatives, responsible adoptions, and community care.
+          </p>
+          <p>
+            We work tirelessly to reduce street animal overpopulation humanely, provide medical treatment, and match rescued cats and dogs with loving forever families.
+          </p>
+          <div class="stats-row">
+            <div class="stat-box">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Rescued & Adopted</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">1,200+</span>
+              <span class="stat-label">Sterilizations</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Volunteers Driven</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADOPTIONS SECTION (3 CARDS IN A ROW WITH MODERN FILTER) -->
+    <section id="adoptions" class="scroll-section">
+      <div class="section-header-text">
+        <h2>Adoptable Animals 🐾</h2>
+        <p>Find your new furry best friend ready to join your family.</p>
+      </div>
+
+      <!-- MODERN GIRLY FILTER CONTROLS -->
+      <div class="modern-filter-bar">
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          <input type="search" id="searchInput" placeholder="Search by name, personality..." aria-label="Search animals">
+        </div>
+
+        <div class="select-group">
+          <div class="select-wrapper">
+            <select id="genderFilter" aria-label="Filter by gender">
+              <option value="all">✨ All Genders</option>
+              <option value="male">🐶 Male</option>
+              <option value="female">🐱 Female</option>
+            </select>
+          </div>
+
+          <div class="select-wrapper">
+            <select id="statusFilter" aria-label="Filter by availability">
+              <option value="all">💖 All Status</option>
+              <option value="available">🌸 Available</option>
+              <option value="gone">🏡 Adopted</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 IN A ROW GRID -->
+      <div class="dogs-grid-3col" id="dogsGrid"></div>
+    </section>
+
+    <!-- PET SHOP SECTION (3 CARDS IN A ROW) -->
+    <section id="shop" class="scroll-section">
+      <div class="section-header-text">
+        <h2>Pet Shop 🛍️</h2>
+        <p>Premium collars, chains, toys, and supplies. All proceeds support TNR rescues.</p>
+      </div>
+
+      <!-- 3 IN A ROW GRID -->
+      <div class="products-grid-3col" id="productsGrid"></div>
+    </section>
+
+    <!-- EVENTS & CAMPAIGNS (TEXT / LOREM) -->
+    <section id="events" class="scroll-section">
+      <h2>Events & Campaigns 🗓️</h2>
+      <p>Check out our scheduled sterilizations, adoption drives, and community outreach campaigns.</p>
+
+      <div class="events-text-grid">
+        <div class="event-card">
+          <div class="event-tag">Sterilization Fair</div>
+          <div class="event-date">Oct 24, 2026</div>
+          <h3>Lorem Ipsum Campaign</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="event-card">
+          <div class="event-tag pink-tag">Adoption Day</div>
+          <div class="event-date">Nov 12, 2026</div>
+          <h3>Community Adoption Meetup</h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY (FEATURED LIVE VIEWPORT + THUMBNAILS ON SIDE/UNDER) -->
+    <section id="gallery" class="scroll-section">
+      <div class="section-header-text">
+        <h2>Gallery ✨</h2>
+        <p>Moments captured during rescue missions, sterilizations, and successful adoptions.</p>
+      </div>
+
+      <div class="gallery-interactive-wrapper">
+        <!-- Main Live Photo Display -->
+        <div class="featured-live-photo">
+          <img id="liveGalleryImg" src="images/11.jpeg">
+          <div class="gallery-caption-overlay" id="liveGalleryCaption">Rescued Pup Finding Hope</div>
+        </div>
+
+        <!-- Thumbnail Grid -->
+        <div class="gallery-thumbnails-grid">
+          <div class="thumb-item active" onclick="switchGalleryImg('https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=1200&q=80', 'Rescued Pup Finding Hope', this)">
+            <img src="images/11.jpeg" alt="Thumb 1">
+          </div>
+          <div class="thumb-item" onclick="switchGalleryImg()">
+            <img src="images/2.jpeg"
+          <div class="thumb-item" onclick="switchGalleryImg( this)">
+            <img src="images/1.jpeg"
+          <div class="thumb-item" onclick="switchGalleryImg('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=1200&q=80', 'Post-Op Recovery & Love', this)">
+            <img src="images/11.jpeg"
+          <div class="thumb-item" onclick="switchGalleryImg('https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?auto=format&fit=crop&w=1200&q=80', 'Forever Family Found', this)">
+            <img src="images/6.jpeg"
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATION SECTION -->
+    <section id="donate" class="scroll-section">
+      <h2>Donate & Support 💜</h2>
+      <p>Your support helps cover medical costs, sterilization procedures, food, and shelter for street animals in CDMX.</p>
+      <div class="donate-box">
+        <p><strong>WhatsApp Support:</strong> 5648982770</p>
+        <p>Contact our team directly to confirm official donation channels before making contributions.</p>
+        <a class="btn-primary pink-btn" href="https://wa.me/525648982770" target="_blank" rel="noopener noreferrer" style="margin-top: 10px;">Support via WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="scroll-section">
+      <h2>Contact Us 💌</h2>
+      <p>Have questions about adoption, volunteering, or medical support?</p>
+      <p><strong>WhatsApp / Phone:</strong> 5648982770</p>
+      <p><strong>Location:</strong> Pueblo San Antonio Tecomitl, Alcaldía Milpa Alta, CDMX, Mexico</p>
+      
+      <div class="contact-actions" style="margin-top: 15px;">
+        <a class="btn-primary" href="https://wa.me/525648982770" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================
+       SUPER THIN FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <p>© <span id="copyright-year"></span> Proyecto TNR CDMX. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
